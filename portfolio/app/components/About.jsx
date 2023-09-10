@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function About() {
   return (
     <div
@@ -13,7 +11,7 @@ export default function About() {
         <p className="text-[#2F303A] opacity-50 text-2xl font-cabinet font-bold">
           A Front-End Developer & UI/UX Designer
         </p>
-        <p className=" font-cabinet font-medium text-2xl text-[#6b6b6b] pt-8">
+        <p className=" font-satoshi font-medium text-2xl text-[#6b6b6b] pt-8">
           My passion lies in translating concepts into responsive, user-friendly
           experiences. Bridging the gap between innovative design and precise
           code. With an eye for aesthetics and a dedication to the latest

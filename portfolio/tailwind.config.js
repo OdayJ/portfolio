@@ -10,8 +10,6 @@ module.exports = {
       backgroundImage: {},
       fontFamily: {
         satoshi: ["var(--font-satoshi)"],
-      },
-      fontFamily: {
         cabinet: ["var(--font-cabinet)"],
       },
     },

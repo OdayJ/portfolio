@@ -3,7 +3,7 @@ import useSmoothScroll from "../useSmoothScroll";
 export default function Nav() {
   const scrollToSection = useSmoothScroll();
   return (
-    <div className="w-full grid place-items-center  fixed">
+    <div className="w-full grid place-items-center z-50  fixed">
       <div className=" max-w-7xl p-6 w-full">
         <div className="flex justify-between items-center ">
           <div
@@ -28,7 +28,10 @@ export default function Nav() {
             <li className="px-3 py-2  cursor-pointer hover:bg-white hover:px-3 hover:py-1 hover:rounded-lg">
               Work
             </li>
-            <li className="px-3 py-2 mr-2  cursor-pointer hover:bg-white hover:px-3 hover:py-1 hover:rounded-lg">
+            <li
+              onClick={() => scrollToSection("Contact")}
+              className="px-3 py-2 mr-2  cursor-pointer hover:bg-white hover:px-3 hover:py-1 hover:rounded-lg"
+            >
               Contact
             </li>
           </ul>

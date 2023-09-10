@@ -2,8 +2,11 @@
 import About from "./components/About";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
-import { animate } from "framer-motion";
+
 import Tech from "./components/Tech";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+
 export default function Home() {
   return (
     <main>
@@ -11,6 +14,8 @@ export default function Home() {
       <Hero />
       <About />
       <Tech />
+      <Contact />
+      <Footer />
     </main>
   );
 }
