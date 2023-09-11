@@ -37,37 +37,20 @@ export default function Contact() {
           onSubmit={handleSubmit}
         >
           <input
-            style={{ display: "none" }}
-            type="text"
-            name="prevent_autofill"
-            autoComplete="off"
-            disabled
-          />
-          <input
             className=" border-b lg:w-1/2 w-full outline-none  "
             placeholder="Your name"
             type="name"
             name="name"
             id="name"
-            autoComplete="new-password"
           />
           <ValidationError prefix="Name" field="name" errors={state.errors} />
-          <input
-            style={{ display: "none" }}
-            type="text"
-            name="prevent_autofill"
-            autocomplete="off"
-            autocorrect="off"
-            disabled
-          />
+
           <input
             className="row-start-2 lg:w-1/2 w-full border-b outline-none "
             placeholder="Your email"
             type="email"
             name="email"
             id="email"
-            autocomplete="off"
-            autocorrect="off"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
 
