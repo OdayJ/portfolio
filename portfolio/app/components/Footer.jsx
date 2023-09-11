@@ -9,7 +9,7 @@ import {
 export default function Footer() {
   const scrollToSection = useSmoothScroll();
   return (
-    <div className="lg:h-[577px] pb-32 h-[250px]  lg:pt-32 grid grid-rows-2 place-items-center text-center select-none mb-12">
+    <div className="lg:h-[577px] pb-32 h-[250px] mt-5 lg:pt-32 grid grid-rows-2 place-items-center text-center select-none mb-12">
       <div className="grid grid-rows-3 w-[300px] lg:w-[467px] gap-6 lg:pt-[30px]  h-[100px] lg:h-[196px] place-items-center font-satoshi font-medium">
         <p className="text-2xl lg:text-4xl text-[#6b6b6b] mb-10">
           Lets work on something amazing together!
@@ -29,10 +29,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-3 grid-cols-2  self-start h-[200px] gap-14  lg:gap-[230px]  text-center   font-satoshi font-medium text-[#6b6b6b] text-[16px]">
+      <div className="grid lg:grid-cols-3 grid-cols-2 mt-12  self-start h-[200px] gap-14  lg:gap-[230px]  text-center   font-satoshi font-medium text-[#6b6b6b] text-[16px]">
         <div className="grid grid-rows-2 self-center lg:self-end lg:gap-4">
-          <p>Oday Jawaada</p>
-          <p>+447388213612</p>
+          <p className="row-start-2">Oday Jawaada</p>
         </div>
         <div className="grid-rows-4 place-items-center self-end gap-4 hidden lg:grid">
           <p

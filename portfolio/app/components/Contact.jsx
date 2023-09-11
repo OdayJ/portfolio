@@ -1,10 +1,45 @@
 "use client";
+import Lottie from "lottie-react";
+
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import animationData from "../../public/animation.json";
 export default function Contact() {
   const [isExpanded, setIsExpanded] = useState(false);
   const [state, handleSubmit] = useForm("mzblgndd");
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [showForm, setShowForm] = useState(true);
+
+  const style = {
+    height: 250,
+  };
+
+  useEffect(() => {
+    if (state.succeeded) {
+      setFormSubmitted(true);
+    }
+  }, [state.succeeded]);
+
+  if (formSubmitted) {
+    return (
+      <div className="h-[300px]">
+        <Lottie
+          style={style}
+          animationData={animationData}
+          loop={false}
+          autoplay={true}
+          speed={0.7}
+          onComplete={() => {
+            setFormSubmitted(false);
+            setShowForm(false); // This will hide the form permanently
+          }}
+        />
+      </div>
+    );
+  }
+
+  if (!showForm) return null;
 
   const handleExpand = () => {
     if (!isExpanded) {
