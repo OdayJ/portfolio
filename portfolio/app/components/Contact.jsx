@@ -56,7 +56,8 @@ export default function Contact() {
             style={{ display: "none" }}
             type="text"
             name="prevent_autofill"
-            autoComplete="off"
+            autocomplete="off"
+            autocorrect="off"
             disabled
           />
           <input
@@ -65,7 +66,8 @@ export default function Contact() {
             type="email"
             name="email"
             id="email"
-            autoComplete="new-email"
+            autocomplete="off"
+            autocorrect="off"
           />
           <ValidationError prefix="Email" field="email" errors={state.errors} />
 

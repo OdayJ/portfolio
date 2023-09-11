@@ -20,40 +20,74 @@ export default function Tech() {
         </div>
         <div className="grid lg:grid-cols-5 grid-cols-4 grid-rows-2 place-items-center gap-2 lg:gap-12">
           <Tippy content="React">
-            <img src="./react.svg" className="lg:w-[76px] w-[46px] pt-5" />
+            <img
+              src="./react.svg"
+              className="lg:w-[76px] w-[46px] pt-5"
+              alt="react-icon"
+            />
           </Tippy>
           <Tippy content="TailwindCSS">
-            <img src="./tailwind.svg" className="lg:w-[76px] w-[46px] pt-5" />
+            <img
+              src="./tailwind.svg"
+              className="lg:w-[76px] w-[46px] pt-5"
+              alt="tailwind-icon"
+            />
           </Tippy>
           <Tippy content="HTML5">
             <img
               src="./html.svg"
               className="lg:w-[76px] w-[46px] pt-5 hidden lg:block"
+              alt="html-icon"
             />
           </Tippy>
           <Tippy content="CSS3">
             <img
               src="./css.svg"
               className="lg:w-[76px] w-[46px] pt-5 hidden lg:block"
+              alt="css-icon"
             />
           </Tippy>
           <Tippy content="Git">
-            <img src="./git.svg" className="lg:w-[76px] w-[46px] pt-5" />
+            <img
+              src="./git.svg"
+              className="lg:w-[76px] w-[46px] pt-5"
+              alt="git-icon"
+            />
           </Tippy>
           <Tippy content="NextJS">
-            <img src="./next.svg" className="lg:w-[76px] w-[46px] pt-5" />
+            <img
+              src="./next.svg"
+              className="lg:w-[76px] w-[46px] pt-5"
+              alt="next-icon"
+            />
           </Tippy>
           <Tippy content="ThreeJS">
-            <img src="./three.svg" className="lg:w-[76px] w-[46px] pt-5" />
+            <img
+              src="./three.svg"
+              className="lg:w-[76px] w-[46px] pt-5"
+              alt="three-icon"
+            />
           </Tippy>
           <Tippy content="NodeJS">
-            <img src="./node.svg" className="lg:w-[76px] w-[46px] pt-5" />
+            <img
+              src="./node.svg"
+              className="lg:w-[76px] w-[46px] pt-5"
+              alt="node-icon"
+            />
           </Tippy>
           <Tippy content="MongoDB">
-            <img src="./mongo.svg" className="lg:w-[76px] w-[46px] pt-5" />
+            <img
+              src="./mongo.svg"
+              className="lg:w-[76px] w-[46px] pt-5"
+              alt="mongodb-icon"
+            />
           </Tippy>
           <Tippy content="Java">
-            <img src="./java.svg" className="lg:w-[76px] w-[46px] pt-5" />
+            <img
+              src="./java.svg"
+              className="lg:w-[76px] w-[46px] pt-5"
+              alt="java-icon"
+            />
           </Tippy>
         </div>
       </div>

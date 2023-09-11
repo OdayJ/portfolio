@@ -14,6 +14,7 @@ export default function About() {
         <img
           className="bg-yellow-500  lg:hidden  w-48 h-48 shadow-lg rounded-[10px] rotate-2"
           src="/headshot.jpg"
+          alt="profilesm"
         />
         <p className=" font-satoshi font-medium text-[16px] lg:text-2xl text-[#6b6b6b] pt-8 p-8 lg:p-0 lg:pt-8">
           My passion lies in translating concepts into responsive, user-friendly
@@ -26,6 +27,7 @@ export default function About() {
       <img
         className="bg-yellow-500 hidden lg:block  w-[392px] h-[422px] shadow-lg rounded-[10px] rotate-2"
         src="/headshot.jpg"
+        alt="profilelg"
       />
     </div>
   );
