@@ -25,7 +25,10 @@ export default function Nav() {
             >
               Tech
             </li>
-            <li className="px-3 py-2  cursor-pointer hover:bg-white hover:px-3 hover:py-1 hover:rounded-lg">
+            <li
+              onClick={() => scrollToSection("Work")}
+              className="px-3 py-2  cursor-pointer hover:bg-white hover:px-3 hover:py-1 hover:rounded-lg"
+            >
               Work
             </li>
             <li

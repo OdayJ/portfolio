@@ -9,9 +9,9 @@ import {
 export default function Footer() {
   const scrollToSection = useSmoothScroll();
   return (
-    <div className="h-[577px] pt-32 grid grid-rows-2 place-items-center text-center select-none mb-12">
-      <div className="grid grid-rows-3 w-[467px] gap-6 pt-[30px]  h-[196px] place-items-center font-satoshi font-medium">
-        <p className="text-4xl text-[#6b6b6b] mb-10">
+    <div className="lg:h-[577px] pb-32 h-[250px]  lg:pt-32 grid grid-rows-2 place-items-center text-center select-none mb-12">
+      <div className="grid grid-rows-3 w-[300px] lg:w-[467px] gap-6 lg:pt-[30px]  h-[100px] lg:h-[196px] place-items-center font-satoshi font-medium">
+        <p className="text-2xl lg:text-4xl text-[#6b6b6b] mb-10">
           Lets work on something amazing together!
         </p>
         <p className=" text-[16px] text-[#6b6b6b]">Thanks for dropping by!</p>
@@ -29,12 +29,12 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3  self-start h-[200px]  gap-[230px]  text-center   font-satoshi font-medium text-[#6b6b6b] text-[16px]">
-        <div className="grid grid-rows-2 self-end gap-4">
+      <div className="grid lg:grid-cols-3 grid-cols-2  self-start h-[200px] gap-14  lg:gap-[230px]  text-center   font-satoshi font-medium text-[#6b6b6b] text-[16px]">
+        <div className="grid grid-rows-2 self-center lg:self-end lg:gap-4">
           <p>Oday Jawaada</p>
           <p>+447388213612</p>
         </div>
-        <div className="grid grid-rows-4 place-items-center self-end gap-4 ">
+        <div className="grid-rows-4 place-items-center self-end gap-4 hidden lg:grid">
           <p
             className="cursor-pointer hover:opacity-80"
             onClick={() => scrollToSection("About")}
@@ -60,7 +60,7 @@ export default function Footer() {
             Contact
           </p>
         </div>
-        <div className="self-end text-left">
+        <div className="lg:self-end text-left self-center">
           Birmingham, <br /> United Kingdom
         </div>
       </div>
