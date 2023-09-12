@@ -14,7 +14,7 @@ export default function Tech() {
           <p className="text-[#2f303a] font-cabinet font-extrabold text-2xl lg:text-4xl pb-2 text-center lg:text-left">
             Tools & Technologies
           </p>
-          <p className="text-[#2f303a] opacity-50 font-cabinet font-bold lg:text-2xl text-center lg:text-left">
+          <p className="text-[#2f303a] px-10 lg:px-0 opacity-50 font-cabinet font-bold lg:text-2xl text-center lg:text-left">
             Discover the technologies and tools that enable me to build amazing
             things, fast.
           </p>

@@ -23,7 +23,7 @@ export default function Contact() {
 
   if (formSubmitted) {
     return (
-      <div className="h-[300px]">
+      <div className="lg:h-[300px] hidden lg:block">
         <Lottie
           style={style}
           animationData={animationData}
