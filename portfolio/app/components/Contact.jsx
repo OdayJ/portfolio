@@ -54,7 +54,7 @@ export default function Contact() {
   return (
     <div
       id="Contact"
-      className="lg:h-[537px] h-[850px] flex items-center justify-center "
+      className="lg:h-[537px]  flex items-center justify-center "
     >
       <div className="h-[537px] lg:w-[1063px] w-full grid grid-rows-3 p-[60px]  bg-white lg:shadow-lg rounded-md">
         <div className="font-cabinet text-[#2f303a] flex flex-col gap-6 ">
@@ -95,12 +95,20 @@ export default function Contact() {
             variants={variants}
             transition={{ duration: 0.7 }}
             placeholder="Your message"
-            className="row-span-2 outline-none border-b max-h-full lg:pt-4" // w-full ensures it takes the full width, transition classes for smoothness
+            className="row-span-2 outline-none border-b max-h-full lg:pt-4 hidden lg:block" // w-full ensures it takes the full width, transition classes for smoothness
             onClick={handleExpand}
             name="message"
             type="message"
             id="message"
-          ></motion.textarea>
+          />
+          <textarea
+            placeholder="Your message"
+            className="row-span-2 outline-none border-b max-h-full lg:pt-4 lg:hidden" // w-full ensures it takes the full width, transition classes for smoothness
+            onClick={handleExpand}
+            name="message"
+            type="message"
+            id="message"
+          />
           <ValidationError
             prefix="Message"
             field="message"

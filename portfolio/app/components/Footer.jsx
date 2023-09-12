@@ -9,7 +9,7 @@ import {
 export default function Footer() {
   const scrollToSection = useSmoothScroll();
   return (
-    <div className="lg:h-[577px] pb-32 h-[250px] mt-5 lg:pt-32 grid grid-rows-2 place-items-center text-center select-none mb-12">
+    <div className="lg:h-[577px] pb-32 h-[250px] mt-24 lg:mt-5 lg:pt-32 grid grid-rows-2 place-items-center text-center select-none mb-12">
       <div className="grid grid-rows-3 w-[300px] lg:w-[467px] gap-6 lg:pt-[30px]  h-[100px] lg:h-[196px] place-items-center font-satoshi font-medium">
         <p className="text-2xl lg:text-4xl text-[#6b6b6b] mb-10">
           Lets work on something amazing together!
