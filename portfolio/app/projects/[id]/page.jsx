@@ -1,6 +1,7 @@
 import Nav from "@/app/components/Nav";
 import Highlight from "@/app/components/project/Highlight";
-import Section from "@/app/components/project/section";
+import Section from "@/app/components/project/Section";
+
 import React from "react";
 import { getProjectById } from "@/sanity/sanity-utils";
 import Image from "next/image";
