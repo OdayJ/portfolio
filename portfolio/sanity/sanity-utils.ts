@@ -5,7 +5,6 @@ const client = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
   apiVersion: "2023-11-13",
-  useCdn: false,
 });
 
 export async function getProjects() {
