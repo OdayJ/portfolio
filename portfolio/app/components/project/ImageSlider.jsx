@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { motion, useMotionValue } from "framer-motion";
+import Image from "next/image";
 
 export default function ImageSlider({ color, images }) {
   const [width, setWidth] = useState(0);
@@ -44,10 +45,13 @@ export default function ImageSlider({ color, images }) {
                 key={image}
                 className="lg:min-w-[672px] min-w-[390px] lg:px-[40px] px-[20px] py-[5px]  "
               >
-                <img
+                <Image
                   className="h-full w-full object-scale-down rounded-3xl pointer-events-none shadow-[0_2px_8px_0_rgba(99,99,99,0.2)] "
                   src={image}
                   alt=""
+                  sizes="100vw"
+                  width={0}
+                  height={0}
                 />
               </motion.div>
             );

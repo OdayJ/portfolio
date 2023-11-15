@@ -1,12 +1,10 @@
 import { createClient, groq } from "next-sanity";
 
-import { apiVersion, dataset, projectId } from "./env";
-
 // Reuse the same client for both functions
 const client = createClient({
-  projectId,
-  dataset,
-  apiVersion,
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+  apiVersion: "2023-11-13",
   useCdn: false,
 });
 
