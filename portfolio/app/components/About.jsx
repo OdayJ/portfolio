@@ -14,7 +14,7 @@ export default function About() {
         </p>
         <Image
           className="lg:hidden   shadow-lg rounded-[10px] "
-          src="/headshot.png"
+          src="/Headshot.png"
           alt="profilesm"
           width={250}
           height={192}
@@ -30,7 +30,7 @@ export default function About() {
 
       <Image
         className=" hidden lg:block  shadow-lg rounded-[10px] rotate-2"
-        src="/headshot.png"
+        src="/Headshot.png"
         alt="profilelg"
         width={420}
         height={422}
