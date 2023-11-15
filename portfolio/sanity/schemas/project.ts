@@ -15,6 +15,45 @@ const project = {
       options: { source: "name" },
     },
     {
+      name: "timeline",
+      title: "Timeline",
+      type: "string",
+    },
+    {
+      name: "color",
+      title: "Color",
+      type: "string",
+    },
+    {
+      name: "statement",
+      title: "Statement",
+      type: "string",
+    },
+    {
+      name: "description",
+      title: "Description",
+      type: "array",
+      of: [{ type: "block" }],
+    },
+    {
+      name: "problem",
+      title: "Problem",
+      type: "array",
+      of: [{ type: "block" }],
+    },
+    {
+      name: "results",
+      title: "Results",
+      type: "array",
+      of: [{ type: "block" }],
+    },
+    {
+      name: "reflection",
+      title: "Reflection",
+      type: "array",
+      of: [{ type: "block" }],
+    },
+    {
       name: "image",
       title: "Image",
       type: "image",
@@ -28,13 +67,19 @@ const project = {
       ],
     },
     {
+      name: "gallery",
+      title: "Gallery",
+      type: "array",
+      of: [{ type: "image" }],
+    },
+    {
       name: "url",
       title: "URL",
       type: "url",
     },
     {
-      name: "content",
-      title: "Content",
+      name: "technologies",
+      title: "Technologies",
       type: "array",
       of: [{ type: "block" }],
     },

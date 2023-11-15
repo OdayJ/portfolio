@@ -1,3 +1,4 @@
+import Hydrate from "./components/Hydrate";
 import "./globals.css";
 import localFont from "next/font/local";
 
@@ -38,7 +39,9 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${satoshi.variable} ${cabinet.variable} font-sans`}
     >
-      <body className="bg-[url('/test.webp')]">{children}</body>
+      <body className="bg-[url('/test.webp')] ">
+        <Hydrate>{children}</Hydrate>
+      </body>
     </html>
   );
 }

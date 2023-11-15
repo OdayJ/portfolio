@@ -1,21 +1,49 @@
 import { createClient, groq } from "next-sanity";
 
-export async function getProject() {
-  const client = createClient({
-    projectId: "34mi31wy",
-    dataset: "production",
-    apiVersion: "2023-03-09",
-    useCdn: false,
-  });
+import { apiVersion, dataset, projectId } from "./env";
+
+// Reuse the same client for both functions
+const client = createClient({
+  projectId,
+  dataset,
+  apiVersion,
+  useCdn: false,
+});
+
+export async function getProjects() {
   return client.fetch(
     groq`*[_type == "project"]{
-        _id,
-        _createdAt,
-        name,
-        "slug": slug.current,
-        "image": image.asset->url,
-        url,
-        content
-      }`
+      _id,
+      name,
+      "slug": slug.current,
+      "image": image.asset->url
+    }`
   );
+}
+
+export async function getProjectById(projectId: any) {
+  const query = groq`*[_type == "project" && _id == $projectId]{
+    _id,
+    _createdAt,
+    name,
+    timeline,
+    color,
+    statement,
+    description,
+    problem,
+    results,
+    reflection,
+    "slug": slug.current,
+    "image": image.asset->url,
+    gallery[]{
+      asset->{
+          url
+      }
+  },
+    url,
+    technologies
+  }`;
+  const params = { projectId };
+  const result = await client.fetch(query, params);
+  return result[0]; // Since the ID is unique, the first item in the result is the project we want
 }

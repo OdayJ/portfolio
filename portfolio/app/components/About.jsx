@@ -13,10 +13,10 @@ export default function About() {
           A Front-End Developer & UI/UX Designer
         </p>
         <Image
-          className="bg-yellow-500  lg:hidden   shadow-lg rounded-[10px] rotate-2"
-          src="/headshot.jpeg"
+          className="lg:hidden   shadow-lg rounded-[10px] "
+          src="/headshot.png"
           alt="profilesm"
-          width={192}
+          width={250}
           height={192}
         />
         <p className=" font-satoshi font-medium text-[16px] lg:text-2xl text-[#6b6b6b] pt-8 p-8 lg:p-0 lg:pt-8">
@@ -29,10 +29,10 @@ export default function About() {
       </div>
 
       <Image
-        className="bg-yellow-500 hidden lg:block  shadow-lg rounded-[10px] rotate-2"
-        src="/headshot.jpeg"
+        className=" hidden lg:block  shadow-lg rounded-[10px] rotate-2"
+        src="/headshot.png"
         alt="profilelg"
-        width={392}
+        width={420}
         height={422}
       />
     </div>

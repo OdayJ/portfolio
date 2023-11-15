@@ -32,7 +32,7 @@ export default function Contact() {
           speed={0.7}
           onComplete={() => {
             setFormSubmitted(false);
-            setShowForm(false); // This will hide the form permanently
+            setShowForm(false);
           }}
         />
       </div>
@@ -56,7 +56,7 @@ export default function Contact() {
       id="Contact"
       className="lg:h-[537px]  flex items-center justify-center "
     >
-      <div className="h-[537px] lg:w-[1063px] w-full grid grid-rows-3 p-[60px]  bg-white lg:shadow-lg rounded-md">
+      <div className="h-[537px] lg:w-[1063px] w-full grid grid-rows-3 p-[40px]  bg-white lg:shadow-lg rounded-md">
         <div className="font-cabinet text-[#2f303a] flex flex-col gap-6 ">
           <p className=" text-2xl lg:text-4xl font-extrabold">
             Lets get in touch!

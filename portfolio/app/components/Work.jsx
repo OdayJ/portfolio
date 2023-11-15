@@ -1,9 +1,9 @@
-import { getProject } from "@/sanity/sanity-utils";
+import { getProjects } from "@/sanity/sanity-utils";
 
 import Cards from "./Cards";
 
 export default async function Work() {
-  const projects = await getProject();
+  const projects = await getProjects();
 
   return (
     <div
@@ -15,9 +15,15 @@ export default async function Work() {
           My work
         </p>
 
-        <div className="grid lg:grid-rows-2 lg:grid-cols-3 text-center h-full w-full gap-y-8 lg:gap-x-14 lg:gap-y-9 ">
+        <div className="grid lg:grid-rows-2 lg:grid-cols-2 text-center h-full w-full gap-y-14 lg:gap-x-14 lg:gap-y-16 ">
           {projects.map((project) => (
-            <Cards key={project._id} name={project.name} />
+            <Cards
+              key={project._id}
+              name={project.name}
+              slug={project.slug}
+              shot={project.image}
+              id={project._id}
+            />
           ))}
         </div>
       </div>

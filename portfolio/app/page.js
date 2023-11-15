@@ -6,6 +6,7 @@ import Tech from "./components/Tech";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Work from "./components/Work";
+import ImageSlider from "./components/project/ImageSlider";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Work />
       <Contact />
       <Footer />
+
       {/* <About />
       <Tech />
       <Work />
